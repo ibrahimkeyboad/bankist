@@ -14,6 +14,8 @@
   --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
 }
 
+
+
 * {
   margin: 0;
   padding: 0;
@@ -31,6 +33,13 @@ body {
   color: #444;
   line-height: 1.9;
   background-color: #f3f3f3;
+}
+
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
 }
 
 /* GENERAL ELEMENTS */
@@ -164,6 +173,7 @@ img {
   color: inherit;
   background-color: var(--color-primary-darker);
   color: #333;
+
 }
 
 /* HEADER */
@@ -354,18 +364,23 @@ h4 {
 .operations__icon--1 {
   background-color: var(--color-secondary-opacity);
 }
+
 .operations__icon--2 {
   background-color: var(--color-primary-opacity);
 }
+
 .operations__icon--3 {
   background-color: var(--color-tertiary-opacity);
 }
+
 .operations__icon--1 svg {
   fill: var(--color-secondary-darker);
 }
+
 .operations__icon--2 svg {
   fill: var(--color-primary);
 }
+
 .operations__icon--3 svg {
   fill: var(--color-tertiary);
 }
@@ -395,7 +410,7 @@ h4 {
   transition: transform 1s;
 }
 
-.slide > img {
+.slide>img {
   /* Only for images that have different size than slide */
   width: 100%;
   height: 100%;
@@ -503,6 +518,7 @@ h4 {
 .testimonial__photo {
   grid-row: 1 / span 2;
   width: 6.5rem;
+  height: auto;
   border-radius: 50%;
 }
 

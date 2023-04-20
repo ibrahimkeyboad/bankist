@@ -1,9 +1,39 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
+
+import { Link } from 'react-scroll';
 
 function Header() {
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const feature = document.querySelector('#section--1');
+      const opeation = document.querySelector('#section--1');
+      const testimonial = document.querySelector('#section--1');
+      const top1 = feature.offsetTop;
+
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop >= top1) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const navbarClass = isSticky ? 'sticky' : '';
+
   return (
     <header className='header'>
-      <nav className='nav'>
+      <nav className={`nav ${navbarClass}`}>
         <img
           src='img/logo.png'
           alt='Bankist logo'
@@ -14,24 +44,48 @@ function Header() {
         />
         <ul className='nav__links'>
           <li className='nav__item'>
-            <a className='nav__link' href='#section--1'>
+            <Link
+              className='nav__link'
+              offset={50}
+              smooth={true}
+              duration={500}
+              href=''
+              to='section--1'>
               Features
-            </a>
+            </Link>
           </li>
           <li className='nav__item'>
-            <a className='nav__link' href='#section--2'>
+            <Link
+              className='nav__link'
+              smooth={true}
+              href=''
+              offset={50}
+              duration={500}
+              to='section--2'>
               Operations
-            </a>
+            </Link>
           </li>
           <li className='nav__item'>
-            <a className='nav__link' href='#section--3'>
+            <Link
+              className='nav__link'
+              smooth={true}
+              href=''
+              offset={50}
+              duration={500}
+              to='section--3'>
               Testimonials
-            </a>
+            </Link>
           </li>
           <li className='nav__item'>
-            <a className='nav__link nav__link--btn btn--show-modal' href='#'>
+            <Link
+              className='nav__link nav__link--btn btn--show-modal'
+              offset={50}
+              href=''
+              smooth={true}
+              duration={500}
+              to='#'>
               Open account
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

@@ -83,9 +83,9 @@ function Testimonial() {
             </SwiperSlide>
           ))}
         </Swiper>
-        <button className='slider__btn slider__btn--left'>&larr;</button>
+        {/* <button className='slider__btn slider__btn--left'>&larr;</button>
         <button className='slider__btn slider__btn--right'>&rarr;</button>
-        <div className='dots'></div>
+        <div className='dots'></div> */}
       </div>
     </section>
   );

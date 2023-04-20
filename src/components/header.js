@@ -46,7 +46,7 @@ function Header() {
           <li className='nav__item'>
             <Link
               className='nav__link'
-              offset={50}
+              offset={0}
               smooth={true}
               duration={500}
               href=''
@@ -59,7 +59,7 @@ function Header() {
               className='nav__link'
               smooth={true}
               href=''
-              offset={50}
+              offset={0}
               duration={500}
               to='section--2'>
               Operations
@@ -70,7 +70,7 @@ function Header() {
               className='nav__link'
               smooth={true}
               href=''
-              offset={50}
+              offset={0}
               duration={500}
               to='section--3'>
               Testimonials
@@ -79,7 +79,7 @@ function Header() {
           <li className='nav__item'>
             <Link
               className='nav__link nav__link--btn btn--show-modal'
-              offset={50}
+              offset={0}
               href=''
               smooth={true}
               duration={500}

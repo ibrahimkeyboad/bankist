@@ -1,5 +1,3 @@
-import React from 'react';
-
 function Signup() {
   return (
     <section className='section section--sign-up'>

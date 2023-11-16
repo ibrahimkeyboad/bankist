@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 function OperationCard() {
   const [selected, setSelected] = useState(1);

@@ -8,12 +8,10 @@ function Header() {
   useEffect(() => {
     const handleScroll = () => {
       const feature = document.querySelector('#section--1');
-      const opeation = document.querySelector('#section--1');
-      const testimonial = document.querySelector('#section--1');
+
       const top1 = feature.offsetTop;
 
-      const scrollTop =
-        window.pageYOffset || document.documentElement.scrollTop;
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
 
       if (scrollTop >= top1) {
         setIsSticky(true);

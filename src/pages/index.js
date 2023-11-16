@@ -1,7 +1,7 @@
 import Feature from '@/components/feature';
 import Foooter from '@/components/foooter';
 import Header from '@/components/header';
-import Opeation from '@/components/opeation';
+import OperationSection from '@/components/operation/OperationSection';
 import Signup from '@/components/signup';
 import Testimonial from '@/components/testimonial';
 import Head from 'next/head';
@@ -15,7 +15,7 @@ function index() {
       </Head>
       <Header />
       <Feature />
-      <Opeation />
+      <OperationSection />
       <Testimonial />
       <Signup />
       <Foooter />

@@ -1,0 +1,25 @@
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+  }
+
+
+}
+
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+
+  .header__title {
+    grid-template-columns: 1fr;
+  }
+
+  .header__img {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}

@@ -14,16 +14,11 @@
   --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
 }
 
-
 .swiper-button-prev,
 .swiper-button-next {
-
   color: #39b385 !important;
   display: flex;
-
 }
-
-
 
 * {
   margin: 0;
@@ -36,20 +31,6 @@ html {
   box-sizing: border-box;
 }
 
-@media (max-width: 75em) {
-  html {
-    /* 9px / 16px  */
-    font-size: 56.25%;
-  }
-}
-
-@media (max-width: 59em) {
-  html {
-    /* 8px / 16px = 0.5 = 50% */
-    font-size: 50%;
-  }
-}
-
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
@@ -57,8 +38,6 @@ body {
   line-height: 1.9;
   background-color: #f3f3f3;
 }
-
-
 
 .swiper {
   width: 100%;
@@ -183,21 +162,26 @@ img {
   transition: all 0.3s;
 }
 
-.nav__link--btn:link,
-.nav__link--btn:visited {
+.nav__btn {
+  font-size: 1.7rem;
+  font-weight: 400;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s;
   padding: 0.8rem 2.5rem;
+  border: none;
   border-radius: 3rem;
   white-space: nowrap;
   background-color: var(--color-primary);
   color: #222;
 }
 
-.nav__link--btn:hover,
-.nav__link--btn:active {
+.nav__btn:hover,
+.nav__btn:active {
   color: inherit;
   background-color: var(--color-primary-darker);
   color: #333;
-
 }
 
 /* HEADER */
@@ -541,7 +525,7 @@ h4 {
 
 .testimonial__photo {
   grid-row: 1 / span 2;
-  width: 6.5rem;
+  max-width: 6.5rem;
   height: auto;
   border-radius: 50%;
 }
